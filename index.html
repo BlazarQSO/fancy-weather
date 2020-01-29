@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>fancy-weather</title>             
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="shortcut icon" href="/src/img/logo.png" type="image/png">       
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.css" rel="stylesheet" />
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-language/v0.10.1/mapbox-gl-language.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script>
+    <script>mocha.setup('bdd');</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js"></script>        
+    <link href="/src/css/style.css" rel="stylesheet" />
+    <script src="src/js/translateModule.js"></script>
+    <script src="src/js/speechModule.js"></script>
+    <script src="src/js/controlsModule.js"></script>
+    <script src="src/js/serviceClassModule.js"></script>
+    <script src="src/js/apiRequest.js"></script>
+</head>
+<body class="body">
+    <script src="/src/js/generate_markup.js"></script>
+    <script src="/src/test/test.js"></script>
+    <script>mocha.run();</script>
+    <script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
+</body>
+</html>

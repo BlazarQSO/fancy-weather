@@ -1,0 +1,532 @@
+.body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    visibility: hidden;
+    background-image: url(/src/img/loading.gif);
+}
+
+@keyframes animation {
+    0% {
+        background-image: url(/src/img/bg.png);
+    }
+
+    100% {
+    }
+}
+
+.bg-animation {
+    animation-name: animation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+}
+
+.wrapper {    
+    width: 100%;  
+}
+
+.block1 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.block2 {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.block3 {
+    display: flex;
+    min-width: 300px;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.block4 {
+    width: 45%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    margin-top: 50px;
+}
+
+.wrapb2b3 {
+    width: 45%;
+    min-width: 300px;
+    flex-direction: column;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    margin-top: 50px;    
+    z-index: 0;
+}
+
+.wrapb2b4 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 300px;
+    margin-bottom: 50px;
+}
+
+.btn-switch-bg {
+    background-image: url(/src/img/updateImg.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border: 2px solid gold;
+    background-color: azure;
+    outline: 0;
+}
+    .btn-switch-bg:hover {
+        background-color: burlywood;
+    }
+    .btn-switch-bg:active {
+        background-color: crimson;
+    }
+
+@keyframes move {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+        border-radius: 50%;
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    animation-name: move;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+.select {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    border: 2px solid gold;
+    outline: 0;
+    color: darkgoldenrod;
+    background-color: azure;
+    padding-left: 0;
+    transition: transform 1s;
+}
+
+    .select:hover {
+        background-color: burlywood;
+        color: white;
+        transform: scale(1.5);
+    }
+
+.btnC, .btnF {
+    width: 50px;
+    height: 50px;
+    border: 2px solid gold;
+    outline: 0;
+    background-color: azure;
+    font-size: 22px;
+    color: darkgoldenrod;
+}
+
+.choose {
+    background-color: burlywood;
+    color: white;
+}
+
+.btnC {
+    margin-left: 10px;
+    border-right: 1px solid gold;
+}
+
+.btnF {
+    border-left: 1px solid gold;
+}
+
+.btnC:hover {
+    border: 2px solid crimson;
+    border-left: 2px solid crimson;
+    animation: rubber 1s;
+}
+
+.btnF:hover {
+    border: 2px solid crimson;
+    border-right: 2px solid crimson;
+    animation: rubber 1s;
+}
+
+.wrap-input {
+    display: flex;
+    height: 50px;
+    width: 45%;
+    min-width: 300px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.wrap-control {
+    display: flex;
+    height: 50px;
+    width: 45%;
+    margin-top: 50px;
+    min-width: 300px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.search-input {
+    outline: 0;
+    box-sizing: border-box;
+    border: 2px solid gold;
+    font-size: 22px;
+    background-color: azure;
+    color: brown;
+    padding-left: 10px;
+    width: 178px;
+}
+
+.search-btn {
+    border: 2px solid gold;
+    border-left: 0;
+    width: 60px;
+    background-color: #ddf3f3;
+    outline: 0;
+    color: darkgoldenrod;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 2px;
+}
+
+    .search-input:hover,
+    .search-btn:hover {
+        background-color: burlywood;
+        color: white;
+    }
+    .search-btn:active {
+        background-color: crimson;
+        color: black;
+    }
+
+@keyframes spin {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.search-btn:hover {
+    animation: spin 6s linear 0s infinite normal;
+    border-left: 2px solid gold;
+}
+
+.speech {
+    box-sizing: border-box;
+    outline: 0;
+    background-image: url(/src/img/microphone.png);
+    background-size: 95% 95%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 9999;
+    border: 2px solid gold;
+    box-sizing: border-box;
+    border-left: 0;
+    width: 60px;
+    min-width: 60px;
+    background-color: #ddf3f3;
+    color: darkgoldenrod;
+}
+
+@keyframes speech {
+    0% {
+        background-size: 95% 95%;
+        box-shadow: 0 0 0 0 rgba(0,0,0, 0.4);
+    }
+
+    50% {
+        background-size: 60% 60%;
+        box-shadow: 0 0 0 10px rgba(0,0,0, 0);
+    }
+
+    100% {
+        background-size: 95% 95%;
+        box-shadow: 0 0 0 0 rgba(0,0,0, 0);
+    }
+}
+
+.start-speech {
+    animation-name: speech;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+.name-location {
+    font-size: 30px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px black, 2px -2px 3px black;
+    width: 100%;
+    text-align: center;
+    min-width: 300px;
+}
+
+.time {
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px black, 2px -2px 3px black;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.temperature {
+    font-size: calc(9rem + 4vw);
+    padding: 0;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 4px 4px 3px black, 4px -4px 3px black;
+    height: 0;
+    padding-bottom: 50%;
+    width: 45%;
+}
+
+.wrap-info {
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    height: 0;
+    padding-bottom: 80%;
+    align-content: center;
+    flex-direction: column;
+}
+
+.wrap-img {
+    width: 100%;
+    height: 60%;
+    height: 300px;
+    display: flex;
+}
+
+.weather-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 0;
+    padding-bottom: 45%;
+    width: 45%;            
+}
+
+.canvas1 { 
+    width: 100%;
+    padding-bottom: 60%;    
+}
+
+.info {
+    font-size: 22px;
+    margin-top: 15px;
+    list-style: none;
+    width: 80%;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px black, 2px -2px 3px black;
+}
+
+.img-day {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 50px;
+    height: 50px;
+}
+
+.day-info {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 3px black, 2px -2px 3px black;
+    min-width: 100px;
+}
+
+.wrap-info-day {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.map {
+    min-width: 290px;
+    height: 310px;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.latitude,
+.longitude {
+    text-align: end;
+    margin-top: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 3px black, 3px -3px 3px black;
+    text-align: center;
+}
+
+.latitude {
+    margin-top: 25px;
+}
+
+.longitude {
+    margin-bottom: 20px;
+}
+
+.validation {
+    display: none;
+    position: absolute;
+    width: 252px;
+    height: 40px;
+    z-index: 1;
+    margin-top: 50px;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    color: crimson;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+@keyframes rubber {
+    0% {
+        transform: scale(1);         
+    }
+
+    30% {
+        transform: scaleX(1.15) scaleY(0.75);
+    }
+
+    40% {
+        transform: scaleX(0.75) scaleY(1.25);
+    }
+
+    60% {
+        transform: scaleX(1.15) scaleY(0.85);
+    }
+
+    100% {
+        transform: scale(1);        
+    }
+}
+
+.dev-test {
+    border: 1px solid #447314;
+    background: #1f2a38;
+    background: -webkit-gradient(linear, left top, left bottom, from(#62c4ad), to(#1f2a38));
+    background: -webkit-linear-gradient(top, #62c4ad, #1f2a38);
+    border-radius: 10px;
+    box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    text-shadow: #61bdc2 0 1px 0;
+    color: #000f61;
+    font-family: helvetica, serif;
+    outline: none;
+    font-size: 14px;
+    text-decoration: none;
+    vertical-align: middle;
+    font-weight: bold;
+    position: absolute;
+    left: 25px;
+    top: 2px;    
+}
+    .dev-test:hover {
+        border: 1px solid #447314;
+        text-shadow: #31540c 0 1px 0;
+        background: #30451c;
+        background: -webkit-gradient(linear, left top, left bottom, from(#625dc2), to(#30451c));
+        background: -webkit-linear-gradient(top, #625dc2, #30451c);
+        color: #fff;
+    }
+    .dev-test:active {
+        text-shadow: #31540c 0 1px 0;
+        border: 1px solid #447314;
+        background: #4e8c9c;
+        background: -webkit-gradient(linear, left top, left bottom, from(#602970), to(#30451c));
+        background: -webkit-linear-gradient(top, #602970, #4e8c9c);
+        color: #fff;
+    }
+
+.mocha {
+    display: none;
+    position: absolute;
+    top: 50px;
+    width: 50%;
+    left: 50px;
+    background-color: rgba(255,255,255,0.9);
+}
+
+@media (max-width: 860px) {
+    .block2 {
+        margin-left: 0;
+    }
+
+    .block3 {
+        margin-left: 0;
+    }
+
+    .map {
+        margin-left: 1%;
+        width: 98%;
+    }
+
+    .day-info {
+        font-size: 16px;
+    }
+
+    .wrap-info-day {
+        font-size: 26px;
+    }
+}
